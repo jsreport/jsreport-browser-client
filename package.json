@@ -7,10 +7,9 @@
     "url": "https://github.com/jsreport/jsreport-browser-client/issues"
   },
   "dependencies": {
-    "jsreport-browser-client-dist": "*",
-    "node.extend": "^1.1.5",
-    "q": "^1.4.1",
-    "q-io": "^1.13.2"
+    "jsreport-browser-client-dist": "0.0.1",
+    "q": "1.4.1",
+    "q-io": "1.13.2"
   },
   "description": "jsreport browser client",
   "devDependencies": {
