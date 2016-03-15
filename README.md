@@ -12,16 +12,16 @@ The most simple scenario. You have html report but you want to additionally add 
 ```html
 <h1>Hello world</h1>
 <input type='button' onclick='print()' value='print me'></input>
-```
-```js
-function print() {
-	jsreport.download('report.pdf', { 
-	  template: { 
-          content: document.getElementById('printedArea').innerHTML,
-          engine: 'none',
-          recipe: 'phantom-pdf'
-    }});
-}
+<script>
+	function print() {
+		jsreport.download('report.pdf', { 
+		  template: { 
+	          content: document.getElementById('printedArea').innerHTML,
+	          engine: 'none',
+	          recipe: 'phantom-pdf'
+	    }});
+	}
+</script>
 ```
 
 
@@ -54,7 +54,7 @@ Hello from detail {{detailId}} ....
 
 The whole usecase can be implemented also through AJAX calls, this can prevent URL changes.
 
-```
+```js
 jsreport.renderAsync({ template: { name: 'master'} }).then(function(r) {
 	document.open();
     document.write(r.toString());
@@ -64,7 +64,7 @@ jsreport.renderAsync({ template: { name: 'master'} }).then(function(r) {
 
 
 ##Editable templates
-The last example shows hot to use the [jsreport borwser client](https://github.com/jsreport/jsreport-browser-client-dist) to edit and preview the template in third party WYSIWYG editor.
+The last example shows how to use the [jsreport borwser client](https://github.com/jsreport/jsreport-browser-client-dist) to edit and preview the template in third party WYSIWYG editor.
 
 ```html
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
