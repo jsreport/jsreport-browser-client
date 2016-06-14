@@ -1,5 +1,7 @@
 # jsreport-browser-client
 
+[![NPM Version](http://img.shields.io/npm/v/jsreport-browser-client.svg?style=flat-square)](https://npmjs.com/package/jsreport-browser-client)
+
 **Adds recipe html-with-browser-client which creates html output with attached [jsreport browser client script](https://github.com/jsreport/jsreport-browser-client-dist).**
 
 The html output is then extended with [jsreport](https://github.com/jsreport/jsreport-browser-client-dist) global object. That can be used to invoke jsreport server rendering directly from the output report.
