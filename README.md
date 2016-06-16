@@ -12,17 +12,19 @@ See the [jsreport-browser-client-dist](https://github.com/jsreport/jsreport-brow
 ##Export part of the report to PDF
 The most simple scenario. You have html report but you want to additionally add controls for printing particular parts into PDF.
 ```html
-<h1>Hello world</h1>
+<div id='printedArea'>
+    <h1>Hello world</h1>
+</div>
 <input type='button' onclick='print()' value='print me'></input>
 <script>
-	function print() {
-		jsreport.download('report.pdf', { 
-		  template: { 
-	          content: document.getElementById('printedArea').innerHTML,
-	          engine: 'none',
-	          recipe: 'phantom-pdf'
-	    }});
-	}
+    function print() {
+        jsreport.download('report.pdf', {
+          template: {
+              content: document.getElementById('printedArea').innerHTML,
+              engine: 'none',
+              recipe: 'phantom-pdf'
+        }});
+    }
 </script>
 ```
 
