@@ -47,7 +47,7 @@ Hello from master....
 The detail template can use data provided from the master template or use [custom script](http://jsreport.net/learn/scripts) to actively fetch required data. There can be also `back` button for navigating back to the master template.
 ```html
 Hello from detail {{detailId}} ....
-<input type='button' onclick='goBack()' value='back'/>
+<input type='button' onclick='window.history.back()' value='back'/>
 
 <script>
     function detail() {
