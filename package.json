@@ -8,15 +8,15 @@
     "url": "https://github.com/jsreport/jsreport-browser-client/issues"
   },
   "dependencies": {
-    "jsreport-browser-client-dist": "1.0.2",
-    "q": "1.4.1",
-    "q-io": "1.13.2"
+    "jsreport-browser-client-dist": "1.0.2"
   },
   "description": "jsreport browser client",
   "devDependencies": {
-    "eslint": "2.13.1",
-    "eslint-config-standard": "5.3.1",
-    "eslint-config-standard-react": "2.5.0",
+    "babel-eslint": "6.0.4",
+    "eslint": "2.11.1",
+    "eslint-config-standard-jsx": "1.2.1",
+    "eslint-plugin-babel": "3.2.0",
+    "jsreport-studio-dev": "1.0.2",
     "standard": "7.1.2"
   },
   "homepage": "https://github.com/jsreport/jsreport-browser-client",
@@ -37,7 +37,9 @@
     "url": "git+ssh://git@github.com/jsreport/jsreport-browser-client.git"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "build": "jsreport-studio-build",
+    "prepublish": "in-publish && npm run build || not-in-publish"
   },
   "files": [
     "lib", "index.js", "jsreport.config.js"
