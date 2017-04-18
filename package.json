@@ -37,6 +37,8 @@
     "url": "git+ssh://git@github.com/jsreport/jsreport-browser-client.git"
   },
   "scripts": {
+    "start": "jsreport-studio-start --httpPort 5488",
+    "run": "npm run build && jsreport-studio-start --httpPort 5488 --run-only",
     "test": "standard",
     "build": "jsreport-studio-build",
     "prepublish": "in-publish && npm run build || not-in-publish"
