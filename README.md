@@ -9,7 +9,7 @@ The html output is then extended with [jsreport](https://github.com/jsreport/jsr
 See the [jsreport-browser-client-dist](https://github.com/jsreport/jsreport-browser-client-dist) for API documentation.
 
 
-##Export part of the report to PDF
+## Export part of the report to PDF
 The most simple scenario. You have html report but you want to additionally add controls for printing particular parts into PDF.
 ```html
 <div id='printedArea'>
@@ -29,7 +29,7 @@ The most simple scenario. You have html report but you want to additionally add 
 ```
 
 
-##Drill down to sub report
+## Drill down to sub report
 Also very common scenario. The report is too complex to display at once and you want let the users to drill down to particular sections. 
 
 The master template can contain several links to the detail drill down. Every link can then render different template and also push additional information through data property.
@@ -67,7 +67,7 @@ jsreport.renderAsync({ template: { name: 'master'} }).then(function(r) {
 ```
 
 
-##Editable templates
+## Editable templates
 The last example shows how to use the [jsreport borwser client](https://github.com/jsreport/jsreport-browser-client-dist) to edit and preview the template in third party WYSIWYG editor.
 
 ```html
@@ -122,5 +122,5 @@ The last example shows how to use the [jsreport borwser client](https://github.c
 </script>
 ```
 
-##License
+## License
 MIT

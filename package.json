@@ -1,6 +1,6 @@
 {
   "name": "jsreport-browser-client",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Jan Blaha"
   },
@@ -8,7 +8,7 @@
     "url": "https://github.com/jsreport/jsreport-browser-client/issues"
   },
   "dependencies": {
-    "jsreport-browser-client-dist": "1.0.2"
+    "jsreport-browser-client-dist": "1.0.3"
   },
   "description": "jsreport browser client",
   "devDependencies": {
@@ -16,7 +16,7 @@
     "eslint": "2.11.1",
     "eslint-config-standard-jsx": "1.2.1",
     "eslint-plugin-babel": "3.2.0",
-    "jsreport-studio-dev": "1.0.2",
+    "jsreport-studio-dev": "1.1.0",
     "standard": "7.1.2"
   },
   "homepage": "https://github.com/jsreport/jsreport-browser-client",
@@ -37,11 +37,16 @@
     "url": "git+ssh://git@github.com/jsreport/jsreport-browser-client.git"
   },
   "scripts": {
+    "start": "jsreport-studio-start --httpPort 5488",
+    "run": "npm run build && jsreport-studio-start --httpPort 5488 --run-only",
     "test": "standard",
     "build": "jsreport-studio-build",
     "prepublish": "in-publish && npm run build || not-in-publish"
   },
   "files": [
-    "lib", "index.js", "jsreport.config.js", "studio"
+    "lib",
+    "index.js",
+    "jsreport.config.js",
+    "studio"
   ]
 }
