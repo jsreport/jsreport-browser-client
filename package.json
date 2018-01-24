@@ -8,7 +8,7 @@
     "url": "https://github.com/jsreport/jsreport-browser-client/issues"
   },
   "dependencies": {
-    "jsreport-browser-client-dist": "1.0.4"
+    "jsreport-browser-client-dist": "1.1.0"
   },
   "description": "jsreport browser client",
   "devDependencies": {
