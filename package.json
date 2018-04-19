@@ -46,6 +46,17 @@
   "engines": {
     "node": ">=8.0.0"
   },
+  "standard": {
+    "ignore": [
+      "main.js"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
+  },
   "files": [
     "lib",
     "index.js",
