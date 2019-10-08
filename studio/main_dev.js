@@ -8,3 +8,9 @@ Studio.addApiSpec({
     omitDataFromOutput: false
   }
 })
+
+Studio.previewListeners.push((request) => {
+  if (request.template && request.template.recipe === 'html-with-browser-client') {
+    return { disableTheming: true }
+  }
+})
